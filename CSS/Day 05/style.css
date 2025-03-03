@@ -1,0 +1,99 @@
+#external_css h1{
+    color: rgb(242, 97, 215);
+    background-color: rgb(185, 237, 237);
+}
+
+#external_css p{
+    color: rgb(14, 182, 95);
+}
+
+.color-property h1{
+    color: blue;
+    background-color: aquamarine;
+}
+
+.color-property p{
+    color: red;
+    background-color: rgb(245, 224, 140);
+}
+
+.color-property button{
+    color: rgb(106, 202, 10);
+    background-color: black;
+}
+
+#name_rgb h1{
+    /* color: teal; */
+    /* color: olive; */
+    color: magenta;
+    /* color: maroon; */
+}
+
+#name_rgb h2{
+    /* color: rgb(0, 255, 0); */
+    /* color: rgb(255, 0, 0); */
+    /* color: rgb(0, 0, 255); */
+    /* color: rgb(255, 255, 0); */
+    /* color: rgb(0, 0, 0); */
+    /* color: rgb(255, 255, 255);
+    background-color: gray; */
+    /* color: rgb(120, 0, 120); */
+    color: rgb(160, 143, 145);
+}
+
+#hex{
+    /* color: #000; */
+    /* color: #ff0; */
+    /* color: #0000ff; */
+    /* color: #ff00ff; */
+    /* color: #ffffff;
+    background-color: #000000; */
+    color: #0f0;
+}
+
+.text_property {
+    border: 3px solid rgb(168, 33, 235);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 6px;
+}
+
+.text_property h1{
+    text-align: center;
+    /* text-align: right;
+    border: 1px solid burlywood;
+    width: 70%; */
+    text-decoration: wavy red underline;
+    /* letter-spacing: normal; */
+    letter-spacing: 5px;
+    font-size: 50px;
+    /* font-family: arial; */
+    /* font-family: Papyrus; */
+    font-family: avant garde, didot, sans-serif;
+}
+
+.text_property h2{
+    /* font-weight: normal; */
+    font-weight: 800;
+    text-decoration: double blue overline;
+    font-family: impact;
+}
+
+.text_property h3 {
+    /* text-align: right; */
+    /* text-align: end; */
+    text-align: start;
+    text-decoration: rgb(255, 0, 230) line-through;
+}
+
+.text_property p {
+    text-align: justify;
+    font-weight: lighter;
+    /* line-height: normal; */
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+.text_property a {
+    text-decoration: none;
+}
