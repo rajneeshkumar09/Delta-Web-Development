@@ -1,0 +1,22 @@
+.equivalent > span{
+    color: #ffffff;
+    background-color: #000;
+    /* color: #fff; */
+}
+
+.orange > div{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 25%;
+}
+
+.orange > div:first-child{
+    /* background-color: rgb(255, 182, 46); */
+    background-color: #FFB62E;
+}
+
+.orange> div:not(:first-child) {
+    /* background-color: rgb(83, 127, 249); */
+    background-color: #537FF9;
+}
