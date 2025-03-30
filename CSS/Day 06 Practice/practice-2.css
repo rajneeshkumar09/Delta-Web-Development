@@ -1,0 +1,44 @@
+/* For the given html and css code, What is the color of h1 */
+
+h1 {
+    color: pink;
+}
+
+#greet {
+    color: yellow;
+}
+
+.myClass {
+    color: brown;
+}
+/* The color of h1 is yellow bcz of specificity ofid > class > element selector */
+
+
+/* For the given html and css code, What is the bg-color of p */
+div p {
+    background-color: black;
+}
+
+.para {
+    background-color: blue;
+}
+
+p {
+    background-color: green;
+}
+/* The color of h1 is blue bcz of specificity of decendent > class > element selector */
+
+
+/* For the given html and css code, What is the color of text "Hello World!" */
+div.greetDiv .greet {
+    color : green;
+}
+
+.greetDiv p.greet {
+    color: blue;
+}
+
+.greetDiv .greet {
+    color: red;
+}
+/* The color of text "Hello World!"  is blue bcz of containing same specificity so according to cascading rule text color depend on last specificity in same specificity */

@@ -1,0 +1,125 @@
+*{
+    font-family: 'Courier New';
+    /* background-color: aquamarine; */
+}
+
+h1 {
+    color: #b92b27;
+}
+
+h3 {
+    color: purple;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: rgb(3, 178, 3);
+    color: aliceblue;
+}
+
+/* Descendent Selector */
+.post a {
+    color: rgb(85, 1, 35);
+    background-color: yellow;
+}
+
+nav a{
+/* nav ul li a{ */
+    color: rgb(5, 174, 109);
+    text-decoration: none;
+}
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: aquamarine;
+    color: rgb(225, 54, 35);
+}
+
+div > input{
+    background-color: darksalmon;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+input[type="password"] {
+    color: green;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n) {
+    background-color: blanchedalmond;
+    padding: 5px 8px;
+}
+
+h1::first-letter {
+    color: green;
+}
+
+.pseudo-element p{
+    color: green;
+    font-weight: bold;
+}
+
+.pseudo-element p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: lightcoral;
+}
+
+.inheritance div {
+    background-color: yellow;
+}
+
+/* .inheritance form {
+    background-color: red;
+} */
+
+.inheritance input, button {
+    background-color: inherit;
+}
+
+.inheritance button:hover {
+    background-color: red;
+}
