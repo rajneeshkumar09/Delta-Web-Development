@@ -1,0 +1,38 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: rgb(228, 196, 234);
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+
+    /* Border Shorthand */
+    border: 5px solid yellowgreen;
+    border-left-color: blue;
+    border-left-style: double;
+    border-top: 3px dotted rgb(243, 4, 40);
+    border-radius: 15px;
+    padding-top: 10px;
+    /* margin-bottom: 25px;
+    margin-left: 20px; */
+    margin: 20px 30px 40px 50px;
+}
+
+h1 {
+    /* border-width: 3px;
+    border-style: dotted;
+    border-color: green; */
+
+    border: 3px dotted green;
+    border-left: 5px double rgb(164, 3, 156);
+    margin: 0;
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    padding: 0 20px;
+}

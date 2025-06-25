@@ -1,0 +1,89 @@
+/* h2 {
+    display: inline;
+    background-color: rgb(166, 206, 240);
+}
+
+span {
+    display: block;
+    background-color: yellowgreen;
+} */
+
+span {
+    /* background-color: lime; */
+    border: 2px solid red;
+
+    /* These propeties, not working properly  */
+    height: 100px;
+    width: 200px;
+
+    /* working only with left & right  */
+    padding: 30px;
+    margin: 20px;
+}
+
+#div {
+    /* background-color: lime; */
+    border: 2px solid red;
+
+    /* Working properly */
+    height: 100px;
+    width: 200px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+.third {
+    display: none;
+}
+
+h1 {
+    border: 2px solid black;
+    width: 33.33%;
+}
+
+.outer { 
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    border: 2px solid black;
+    margin: 50px;
+}
+
+.inner { 
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    border: 2px solid brown;
+    margin: 10%;
+}
+
+.box1 {
+    font-size: 20px;
+}
+
+.box2 {
+    font-size: 0.5em;
+    padding: 3em;
+}
+
+button {
+    font-size: 50px;
+    border-radius: 15px;
+    border: 2px solid green;
+    padding: 0 1em;
+}
+
+.div {
+    /* Shows Snowball effect */
+    /* fonbt-size: 2em;  */
+    font-size: 2rem;
+}
