@@ -1,0 +1,170 @@
+#transparency { 
+    display: flex;
+}
+
+#alpha {
+    height: 100px;
+    width: 100px; 
+    /* background-color: #00ff4ce4; */
+    /* background-color: #00ff4c00; */
+    background-color: #00ff4cff;
+    margin-right: 10px;
+}
+
+#opacity {
+    height: 100px;
+    width: 100px;
+    background-color: #ffa51f;
+    opacity: 1;
+}
+
+.transition {
+    height: 100px;
+    width: 100px;
+    background-color: #fa8072;
+    margin-top: 10px;
+    margin: 0 auto;
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+    transition: margin-top 4s ease-in-out 0.2s;
+}
+
+.transition:hover {
+    background-color: cornflowerblue;
+    margin-top: 400px;
+    border-radius: 50%;
+}
+
+.transform {
+    /* margin-top: 100px; */
+    border: 2px solid brown;
+    height: 500px;
+}
+
+.div, .shadow { 
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+.div:nth-of-type(2n) {
+    background-color: #f7bd6a;
+}
+
+.div:nth-of-type(3n) { 
+    background-color: #ebb02d;
+}
+
+.box1 {
+    transform: rotate(45deg);
+}
+
+.box2 { 
+    transform: scale(0.5);
+    /* scaleX(), scaleY() */
+}
+
+.box3 { 
+    /* transform: translate(100px, 100px); */
+    /* transform: translateX(100px); */
+    transform: translateX(-100px);
+    /* transform: translateY(100px); */
+    /* transform: translateY(-100px); */
+}
+
+.box4 { 
+    /* transform: skew(30deg); */
+    transform: skew(-30deg);
+}
+
+.box5 { 
+    transform: rotate(30deg) translate(150px) skew(45deg) scale(1.3);
+}
+
+.shadow { 
+    border: none;
+    box-shadow: 3px 3px 10px black;
+}
+
+.bg-img { 
+    height: 200px;
+    width: 600px;
+    background-color: #5ac64c;
+    margin: 0 auto;
+    background-image: url("./green\ leaves.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.card { 
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 4px 8px black;
+    /* transition: 1s; */
+}
+
+.card img {
+    height: 65%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.desc {
+    padding: 0 2px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #6804e3;
+    transition: 1s;
+}
+
+h3, p {
+    margin: 4px 4px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+}
+
+#static {
+    background-color: salmon;
+    position: static;
+    left: 100px;
+    top: 100px;
+}
+
+#relative {
+    background-color: #e83b0b;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+#absolute {
+    background-color: aqua;
+    position: absolute;
+    left: 100px; 
+    top: 100px;
+}
+
+#fixed {
+    background-color: fuchsia;
+    position: fixed;
+    left: 150px;
+    top: 150px;
+}
