@@ -1,0 +1,192 @@
+*{
+    margin: 4px 0 0 4px;
+    padding: 2px;
+}
+
+/* CSS Grid */
+
+.container { 
+    width: 600px;
+    height: 300px;
+    background-color: salmon;
+    display: grid;
+    /* display: inline-grid; */
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: auto auto auto; */
+
+    /* same work as repeat() */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    /* row-gap: 10px;
+    column-gap: 30px; */
+    grid-gap: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    /* In place of above both property, we use */
+    place-items: center;
+}
+
+.item { 
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.one {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/4; */
+    /* grid-column: 1/ span 3; */
+    /* justify-self: end;
+    align-self: end; */
+    place-self: start;
+}
+
+.two {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/4; */
+    grid-row: 1/span 2;
+}
+
+.three {
+    justify-self: start;
+    align-self: end;
+}
+
+/* Animation */
+
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: palegreen;
+    text-align: center;
+
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimate; */
+
+    /* animation-name: widthAnimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* animation: widthAnimate 4s ease-in 1s infinite alternate; */
+    animation: colorAnimate 8s ease-in 1s 2 alternate;
+}
+
+@keyframes widthAnimate {
+    from{
+        width: 10px;
+        background-color: sandybrown;
+    }
+    to{
+        width: 400px;
+        background-color: blue;
+        border-radius: 20px;
+    }
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimate {
+    0%{
+        background-color: sandybrown;
+    }
+    50%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+/* Media Query */
+
+h2 {
+    background-color: #ffff00;
+    border: 2px solid #000000;
+}
+
+@media (width:500px) {
+    h2 {
+        background-color: #7be017;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 600px) {
+    h2 {
+        background-color: #ff0000;
+        color: white;
+        border: 4px double #800080;
+        border-radius: 10px;
+    }
+
+    .media-box {
+        height: 100px;
+        width: 100px;
+        background-color: #0000ff;
+        color: white;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        background-color: #ff69b4;
+        color: #06ffd5;
+        font-size: 35px;
+    }
+}
+
+@media (min-width:250px) and (max-width:350px) {
+    h2 {
+        background-color: #b300ff;
+        font-size: 50px;
+    }
+}
+
+@media (orientation: landscape) {
+    h2 {
+        background-color: aqua;
+        color: brown;
+        font-size: 60px;
+    }
+}
+
+/* z-index */
+
+.z-box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.one {
+    background-color: aquamarine;
+    position: relative;
+    z-index: 1;
+}
+
+.two {
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+}
