@@ -1,0 +1,99 @@
+h2 {
+    text-decoration: 3px #1ab7f5 underline;
+    font-size: 45px;
+    text-align: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.header, .sidebar, .navigation, .main, .ads, .footer {
+    background-color: pink;
+    text-align: center;
+    font-size: 25px;
+}
+
+.header, .footer {
+    grid-row: 1/2;
+    grid-column: 1/13;
+    height: 50px;
+}
+
+.footer {
+    grid-row: 12/13;
+}
+
+.sidebar, .ads {
+    grid-row: 2/12;
+    grid-column: 1/4;
+
+}
+
+.ads {
+    grid-column: 10/13;
+}
+
+.navigation, .main {
+    grid-row: 2/3;
+    grid-column: 4/10;
+}
+
+.main {
+    grid-row: 3/12;
+}
+
+/* Media Queries */
+
+@media (max-width:720px) {
+    .header, .footer, .navigation {
+        grid-row: 1/2;
+        grid-column: 1/13;
+        height: 50px;
+    }
+
+    .navigation {
+        grid-row: 2/3;
+    }
+
+    .footer, .main {
+        grid-row: 12/13;
+        grid-column: 4/13;
+    }
+
+    .sidebar, .main, .ads {
+        grid-row: 3/12;
+        grid-column: 1/4;
+    }
+
+    .main {
+        grid-column: 4/13;
+    }
+
+    .ads {
+        grid-row: 12/13;
+    }
+}
+
+/* Loader */
+
+.loader {
+    height: 120px;
+    width: 120px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #e9a91f;
+    border-radius: 50%;
+    animation: spin 1.2s ease-in-out 0s infinite ;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
