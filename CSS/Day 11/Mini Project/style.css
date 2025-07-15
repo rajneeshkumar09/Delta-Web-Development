@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Kalam", cursive; */
+    font-family: "Poppins", sans-serif;
+}
+
+.main-box {
+    background-image: url("./camera.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn-one i {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 12px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar-menu {
+    /* visibility: hidden;   */
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 16.4vw;
+    background-color: #fff2;
+    box-shadow: 0 0 6px #fff7;
+    transition: all 0.4s linear;
+}
+
+.sidebar-menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 1px 4px #fff7;
+    height: 60px;
+}
+
+.sidebar-menu .logo a {
+    position: inherit;
+    left: 30px;
+    text-decoration: none;
+    color: #fff9;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sidebar-menu .btn-two i {
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff7;
+    cursor: pointer;
+    /* opacity: 0; */
+    transition: all 0.3s linear;
+}
+
+.sidebar-menu .menu {
+    position: inherit;
+    top: 80px;
+    line-height: 60px;
+}
+
+.sidebar-menu .menu li {
+    color: #fff;
+    position: inherit;
+    width: 15.7vw;
+    padding-left: 10px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sidebar-menu .menu i, a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 2px;
+}
+
+.sidebar-menu .social-media {
+    position: absolute;
+    bottom: 6px;
+    left: 4vw;
+    line-height: 4vh;
+}
+
+.sidebar-menu .social-media a i {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+    margin: 0 3px;
+}
+
+.sidebar-menu .social-media a i:hover {
+    color: #fff;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check {
+    display: none;
+}
+
+.sidebar-menu .menu li:hover {
+    box-shadow: 0 0 4px #fff7;
+}
+
+.btn-one i:hover {
+    font-size: 40px;
+}
+
+.btn-two i:hover {
+    font-size: 25px;
+}
+
+#check:checked ~ .sidebar-menu {
+    left: 0;
+}
+
+#check:checked ~ .btn-one {
+    /* position: absolute;
+    top: -50px; */
+    opacity: 0;
+}
+
+/* when opacity is 0 in initial state otherwise don't do this */
+
+/* #check:checked ~ .sidebar-menu .btn-two i {
+    opacity: 1;
+} */
