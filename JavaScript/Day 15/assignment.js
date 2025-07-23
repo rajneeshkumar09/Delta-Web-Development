@@ -10,9 +10,9 @@ if (num%10 === 0) {
 
 // Question 2
 
-// let _name = prompt("Enter your name : ");
-// let age = prompt("Enter your age : ");
-// alert(`${_name} is ${age} years old.`);
+let _name = prompt("Enter your name : ");
+let age = prompt("Enter your age : ");
+alert(`${_name} is ${age} years old.`);
 
 // Question 3
 
